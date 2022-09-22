@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Usando etiquetas Flex Box, Listas y enlaces en
+            HTML
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Temas
+                <ul>
+                    <li>Tema 1</li>
+                    <li>Tema 2</li>
+                </ul>
+            </li>
+            <li>Recurcos digitales
+                <ul>
+                    <li>Recurso 1</li>
+                    <li>Recurso 2</li>
+                </ul>
+            </li>
+            <li>Aprendizaje
+                <ul>
+                    <li>Actividad 1</li>
+                    <li>Actividad 2</li>
+                </ul>
+            </li>
+            <li>Acerca de</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>
+            Proposito del sitio
+        </h2>
+        <p>
+            El proposito de este sitio tiene como fin explicar los conceptos basicos de flexbox, listas y enlaces y asi comptender y posteriormente usarlos en HTML.
+        </p>
+        <article>
+            <h2>Flex Box</h2>
+            <img src="img/descarga.png" alt="Esta imagen sirve como ilustracion de flexbox">
+            <p>
+                Es un modulo de caja flexible, el cual fue diseñado como uun modelo unidimensional y que tiene un metodo que puede ayudar
+                a distribuir el espacio entre los items de una interfaz y mejorar las capacidades de alineacion. Cuando se trabaja con flexbox 
+                necesitamos pensar en dos ejes - el eje principal y el eje cruzado. El eje princiapl esta defimido
+                por la propiedad flex-direction y el eje cruzado es perpendicular a este.
+
+            </p>
+            <h4>Eje principal</h4>
+            <p>
+                El eje principal esta definido por flex-direction, el cual posee cuatro variables.
+                <ul>
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                </ul>
+            </p>
+            <p>
+                Si se elige row o row-reverse el eje principal se correra a lo largo de la fila segun la direccion de la fila.
+            </p>
+            <img src="img/Eje principal row.png" alt="row del eje principal">
+            <p>
+                Cuando elige column o column-reverse el eje principal se correra desde el borde superior de la pagina hasta el final.
+            </p>
+            <img src="img/columnejeprincipal.png" alt="Columna eje principal">
+            <h4>Eje cruzado</h4>
+            <p>
+                Este va perpendicular al eje principal, por lo tanto flex-direction
+                es row o row-reverse donde el eje cruzado ira por las columnas.
+            </p>
+            <img src="img/rowcruzado.png" alt="row eje cruzado">
+            <P>
+                Si el eje es un column o column-reverse entonces el eje cruzado correra hacia lo largo de las filas.
+            </P>
+            <img src="img/columncruzado.png" alt="columna eje cruzado">
+            <p>
+                Tomado de.Mdn Web docs.https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+            </p>
+        </article>
+        <article>
+            <h2>Listas y enlaces HTML</h2>
+            <h2>Listas</h2>
+            <img src="img/listas.png" alt="ilustacion de listas en HTML">
+            <p>
+                Las listas nos permite crear un conjunto de elementos de forma de lista en una pagina, el cual tiene como un orden un guion o numero.
+
+            </p>
+            <p>
+                Las listas tiene diferentes tipo en HTML entre los cuales tenemos los siguientes.
+                <ul>
+                    <li>Listas ordenadas</li>
+                    <li>Listas desordenadas</li>
+                    <li>Listas de definiciones</li>
+                </ul>
+            </p>
+            <h3>Listas ordenadas</h3>
+            <p>
+                Son aquellas que muestran los elementos de la lista en orden. Se representan en forma de elementos enumerados, cuando los elemetos de cada uno ira por medio de un numero o letra el cual se establecera un orden.
+            </p>
+            <p>
+                Las listas ordenas se representan por medio de la etiqueta ol.
+            </p>
+            <img src="img/ol.PNG" alt="Representa la lista ol">
+            <p>
+                cada uno de los elementos de la lista se representara por medio de li.
+
+            </p>
+            <img src="img/li.PNG" alt="Representa lista li">
+            
+            <h3>Inicio de lista start</h3>
+            <p>
+                Este atributo permite en dodne se quiere emepezar la lista, ya que en HTML por defecto inicia con el numero 1.
+            </p>
+            <img src="img/star.PNG" alt="Numero de lista ">
+
+            <p>
+                De tal forma, que si quiere que la lista se empieze con el numero 5, se hara de la suguinte forma:
+
+            </p>
+            <img src="img/star5.PNG" alt="lista ordenada por numero">
+            <h3>Listas desordenadas</h3>
+            <p>
+                Sirven para mostrar las listas sin ningun tipo de orden, se hace por medio de una viñeta que puede ser punto o un cuadarado.
+            </p>
+
+            <p>
+                Para definir se utiliza el elemento ul.
+            </p>
+            <img src="img/ul.PNG" alt="Elemento ul">
+
+            <p>
+                Para representar la lista desordenada se utiliza el mismo elemento li
+            </p>
+            <img src="img/ul elemento.PNG" alt="ul elemento">
+            <h3>Listas de definiciones</h3>
+            <p>
+                Nos sirven para montar listas en la que tenemos la estructura con un valor y una definicion. Suelen ser listas para defirnir terminos, como si fuese un diccionario, si bien pueden ser cualaquier valor o definicion.
+            </p>
+            <p>
+                Esta lista se construye mediante elemnto dl
+            </p>
+            <img src="img/dl.PNG" alt="definicion de lista">
+            <p>
+                En las listas de difiniciones si tienen dos elementos anidados, que se representa al valor dt y el que representa la definicion dd.
+            </p>
+            <img src="img/dldd.PNG" alt="definicion de lista dd">
+            <p>
+                Tomado de. Manual web.https://www.manualweb.net/html/listas-html/
+            </p>
+            
+        </article>
+        <article>
+            <h2>Enlaces HTML</h2>
+            <img src="img/enlaces.png" alt="Sirve par enlazar difrente documentos">
+        <p>
+            Los enlaces en HTML son muy impportantes ya que por medio de estos podemos comunicar una pagina a otra, ya que esta forma enlazando los documentos HTML podemos acajar tejiendo lo que es internet.
+        </p>
+        <p>
+            Para crear un enlace en HTML se utiliza el elemento A con la sintaxis:
+        </p>
+        <img src="img/Enlace.PNG" alt="Enlaces en HTML">
+        <p>
+            El objetivo principal de este sera enlazar un destino. Para poder enlazarlo se utilizara el atributo href. El valor del atributo href puede ser cualquier URI que represente un recurso. De manera que el enlace en HTML se creara con la sintaxis:
+        </p>
+        <img src="img/uri.PNG" alt="Enlace para determinar una url">
+        <h3>Destino enlace</h3>
+        <p>
+            Si no se configura el navegador web que se este utilizando el enlace se abrira en la misma ventana en la que se tiene el enlace.
+        </p>
+        <p>
+            Para hacer esto lo podemos hacer mediante el atributo target, estos son algunos valores que se admite en target.
+
+        </p>
+        <ul>
+            <li>_blank, intentara abrir el enlace en una nueva ventana. La ventana no tendra nombre</li>
+            <li>_self, el usuario intentara abrir en enlace en el mismo marco donde esta el codigo actual.</li>
+            <li>_parent, el usario intentara abrir el enlace en frasemet inmediatamente superior al que se encuentra la pagina.</li>
+            <li>_top, se abrira el enlace en la ventana padre. En el caso de que exista un frasemet lo eliminara y se hara con toda la ventana.</li>
+            <li>nombre_marco, interntara abrir en el enlace frame que coincida con el nombre. En caso de no existir un frame con ese nombre lo abrira en una nueva ventana, asignandole dicho nombre.</li>
+        </ul>
+        <img src="img/frame.PNG" alt="Se utiliza para configurar los enlaces">
+        <h3>Titulos de enlaces</h3>
+        <p>
+            Sirve oara enlazar contra un recurso de la web, servidor, directorio, dominio. Se describe lo que enlaza es el contenido que se encuentra entre las etiquetas A.
+        </p>
+        <p>
+            El elemnto A ofrece un atributo llamado title, donde se puede describir de una forma textual el destino enlace. 
+        </p>
+        <img src="img/titulos de enlaces.PNG" alt="titulos de enlaces">
+        <p>
+            Tomado de.Manual web.https://www.manualweb.net/html/enlaces-html/
+        </p>
+        </article>
+        
+    </section>
+    <h3>
+        Mokups
+    </h3>
+    <img src="img/Captura.PNG" alt="Se representa de como va a quedar la pagina">
+    <hr>
+    <footer>
+       Autor:Ferdinan Sanchez Quiroga <br> Correo: theghalf@hotmail.com <br>Skype:theghalf@hotmail.com <br> 22 de septiembre del 2022
+    </footer>
+    
+
+</body>
+</html>
