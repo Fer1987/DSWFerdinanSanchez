@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+   
+    <nav>
+        <div id="nav"></div>
+
+        <ul class="navegador">
+
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Temas</a>
+                <ul>
+                    <li><a href="Flexbox.html">Flex box</a></li>
+                    <li><a href="Listas.html">Listas</a></li>
+                    <li><a href="Enlaces.html">Enlaces</a></li>
+                </ul>
+            </li>
+                
+            <li><a href="">Recursos multimedios</a>
+                <ul>
+                    <li><a href="Rflexbox.html">Flex box</a></li>
+                    <li><a href="Rlistas.html">Listas</a></li>
+                    <li><a href="Renlaces.html">Enlaces</a></li>
+                </ul>
+
+            </li>
+            <li><a href="Aprendizaje.html">Aprendizaje</a></li>
+            <li><a href="Autor.html">Autor</a></li>
+                
+            
+        </ul>
+    </nav>
+    <header class="Encabezado">
+
+        <h1>Flex Box</h1>
+        <img src="img/descarga.png" alt="Esta imagen sirve como ilustracion de flexbox">
+        
+    </header>
+    <main class="contenedor">
+        <section class="textop">
+            <article>
+                <p>
+                    Es un modulo de caja flexible, el cual fue diseñado como uun modelo unidimensional y que tiene un metodo que puede ayudar
+                    a distribuir el espacio entre los items de una interfaz y mejorar las capacidades de alineacion. Cuando se trabaja con flexbox 
+                    necesitamos pensar en dos ejes - el eje principal y el eje cruzado. El eje princiapl esta defimido
+                    por la propiedad flex-direction y el eje cruzado es perpendicular a este.
+    
+                </p>
+                <h4>Eje principal</h4>
+                <p>
+                    El eje principal esta definido por flex-direction, el cual posee cuatro variables.
+                    <ul>
+                        <li>row</li>
+                        <li>row-reverse</li>
+                        <li>column</li>
+                        <li>column-reverse</li>
+                    </ul>
+                </p>
+                <p>
+                    Si se elige row o row-reverse el eje principal se correra a lo largo de la fila segun la direccion de la fila.
+                </p>
+                <img src="img/Eje principal row.png" alt="row del eje principal">
+                <p>
+                    Cuando elige column o column-reverse el eje principal se correra desde el borde superior de la pagina hasta el final.
+                </p>
+                <img src="img/columnejeprincipal.png" alt="Columna eje principal">
+                <h4>Eje cruzado</h4>
+                <p>
+                    Este va perpendicular al eje principal, por lo tanto flex-direction
+                    es row o row-reverse donde el eje cruzado ira por las columnas.
+                </p>
+                <img src="img/rowcruzado.png" alt="row eje cruzado">
+                <P>
+                    Si el eje es un column o column-reverse entonces el eje cruzado correra hacia lo largo de las filas.
+                </P>
+                <img src="img/columncruzado.png" alt="columna eje cruzado">
+                <p>
+                    Tomado de.Mdn Web docs.https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+                </p> 
+            
+            </article>
+          
+            
+        </section>
+        <aside class="lateral">
+            <a class="twitter-timeline" data-height="500"
+                href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+    </main>
+</body>
+</html>
